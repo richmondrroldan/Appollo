@@ -42,6 +42,8 @@ class eventsController extends Controller
          $this->validate($request, [
             'title' => 'required',
             'description' => 'required',
+            'venue' => 'required',
+            'date' => 'required'
             ]);
         Event::create($request->all());
         return redirect()->route('events.index')->with('success', 'Event created successfully');
@@ -89,6 +91,8 @@ class eventsController extends Controller
         $this->validate($request, [
                 'title' => 'required',
                 'description' => 'required',
+                'venue' => 'required',
+                'date' => 'required',
             ]);
         Event::find($id)->update($request->all());
         return redirect()->route('events.index')

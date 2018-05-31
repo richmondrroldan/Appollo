@@ -17,8 +17,7 @@
     </div>
 </div>
 
-    <a href="/upEvents" class="btn btn-default btn-lg span"> <span class="network-name">Back</span></a>
-
+<a href="/upEvents" class="btn btn-default btn-lg span"> <span class="network-name">Back</span></a>
 
 
 

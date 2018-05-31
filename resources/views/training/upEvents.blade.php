@@ -1,31 +1,26 @@
 @extends('layout')
 @include('templates/nav')
 @section('content')
-<div class="intro-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                    <div class="intro-message">
-                    <h3>Welcome to HIFI's training programs.</h3>
-                    <hr class="intro-divider">
-                    <ul class="list-inline intro-social-buttons">
-                        @foreach($events as $event)
-                        <li>
-                            <a type="button" class="btn btn-default btn-lg span" id="dtBtn" href="{{route('events.show', $event->id)}}"><span class="network-name">{{$event->title}}</span></a>
-                        </li>
-
-                        @endforeach
-                        </br>
-                        </br>
-                        </br>
-                        <li>
-                            <a href="/" class="btn btn-default btn-lg span"> <span class="network-name">Back</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+<!-- News -->
+<section class="newsfeed">
+    <div class="programs intro-header" style="margin-top:50px">
+        <span class="programs-header">UPCOMING EVENTS</span>
     </div>
-</div>
+    <div class="intro-header" style="margin-top: 30px; margin-bottom: 30px;">
+           
+            @foreach($events as $event)
+                <div class="well">
+                        <h4 class="media-heading"> <strong>Event Title :</strong> {{$event->title}}</h4>
+                        <p class="center"><strong>Event Description :</strong> {{$event->description}} </p>
+                        <p><strong>Event Venue : </strong> {{$event->venue}}</p>
+                        <p><strong>Event Date : </strong> {{$event->date}}</p>
+                   </div>
+                </br>
 
+                  
+            @endforeach 
+
+    </div>
+</section>
+<!-- End News -->
 @stop

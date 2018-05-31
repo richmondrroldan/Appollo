@@ -51,10 +51,17 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Event Title:</strong>
-                {!! Form::textarea('title', null, array('placeholder' => 'Event Title','class' => 'form-control','style'=>'height:100px')) !!}
+                <input type="textarea" class="form-control" name="title" id="title"  placeholder="Title"/>
 
                 <strong>Description:</strong>
                 {!! Form::textarea('description', null, array('placeholder' => 'Event Description','class' => 'form-control','style'=>'height:100px')) !!}
+
+                <strong>Venue:</strong>
+                <input type="textarea" class="form-control" name="venue" id="venue"  placeholder="Title"/>
+            
+                <strong>Date:</strong>
+                <input type="textarea" class="form-control" name="date" id="date"  placeholder="Title"/>
+            
             </div>
         </div>
 

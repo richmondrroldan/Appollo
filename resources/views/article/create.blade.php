@@ -41,11 +41,8 @@
             </div>
             <!-- /.navbar-static-side -->
         </nav>
-
-        <div id="page-wrapper">
-<div class="container">
-                <div class="">
-                    <h3 class="center">Workshop Request</h3>
+<div id="page-wrapper" style="padding-top: 50px;">
+                    <h3 class="center">Add Article</h3>
                     </br>
                     <form class="" method="POST" action="{{route('articleC.store')}}" enctype="multipart/form-data">
                     {{ csrf_field() }}
@@ -54,7 +51,7 @@
                             <label for="name" class="cols-sm-2 control-label">Title</label>
                             <div class="cols-sm-10">
                                 <div class="input-group span">
-                                    <input type="text" class="form-control" name="title" id="title"  placeholder="Title"/>
+                                    <input type="textarea" class="form-control" name="title" id="title"  placeholder="Title"/>
                                 </div>
                             </div>
                         </div>
@@ -63,13 +60,17 @@
                             <label for="email" class="cols-sm-2 control-label">Description</label>
                             <div class="cols-sm-10">
                                 <div class="input-group span">
-                                    <input type="text" class="form-control" name="description" id="description"  placeholder="Description"/>
+                                    <input type="textarea" class="form-control" name="description" id="description"  placeholder="Description"/>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <strong>Details:</strong>
-                            {!! Form::textarea('article', null, array('placeholder' => 'Article','class' => 'form-control','style'=>'height:400px')) !!}
+                            <label for="email" class="cols-sm-2 control-label">Link</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group span">
+                                    <input type="textarea" class="form-control" name="link" id="link"  placeholder="Link"/>
+                                </div>
+                            </div>
                         </div>
                           <div class="form-group">
                             <label for="username" class="cols-sm-2 control-label">Image</label>

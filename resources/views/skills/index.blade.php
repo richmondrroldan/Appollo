@@ -50,10 +50,10 @@
                     @endif
             <div class="col-lg-12 margin-tb">
                 <div class="pull-left">
-                    <h2>Topic Master List</h2>
+                    <h2>Expertise Master List</h2>
                 </div>
                 <div class="pull-right">
-                    <a class="btn btn-success" href="{{route('skills.create')}}"> Create New Skill</a>
+                    <a class="btn btn-success" href="{{route('skills.create')}}"> Create New Expertise</a>
                 </div>
             </div>
         </div></br>

@@ -70,7 +70,7 @@
             <tr>
                 <td>{{$article->title}}</td>
                 <td>{{$article->description}}</td>
-                <td>{{$article->article}}</td>
+                <td>{{$article->link}}</td>
                 <td>{{$article->name}}</td>
                 <td>
                     <a class="btn btn-primary" href="{{ route('articleC.edit', $article->id) }}">Edit</a>

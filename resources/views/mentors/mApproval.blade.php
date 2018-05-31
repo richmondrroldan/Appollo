@@ -52,9 +52,6 @@
                 <div class="pull-left">
                     <h2>Mentor Approval</h2>
                 </div>
-                <div class="pull-right">
-                    <a class="btn btn-success" href="{{route('skills.create')}}"> Create New Skill</a>
-                </div>
             </div>
         </div></br>
         <table class="table table-bordered center">

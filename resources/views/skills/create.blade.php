@@ -42,35 +42,31 @@
     </div>
     <!-- /.navbar-static-side -->
 </nav>
-<div id="page-wrapper">
-    <div class="" style="padding-top: 50px;">
-        <div class="">
-            <h3 class="center">Add Skill</h3>
+<div id="page-wrapper" style="padding-top: 50px;">
+             <h3 class="center">Add Skill</h3>
             </br>
-            <form class="" method="POST" action="{{route('skills.store')}}">
+        <form class="" method="POST" action="{{route('skills.store')}}">
             {{ csrf_field() }}
 
             <div class="form-group">
             <label for="name" class="cols-sm-2 control-label">Title</label>
             <div class="cols-sm-10">
                 <div class="input-group span">
-                    <input type="text" class="form-control" name="title" id="title"  placeholder="Title"/>
+                    <input type="textarea" class="form-control" name="title" id="title"  placeholder="Title"/>
                 </div>
             </div>
-        </div>
-        </br>
-        <button type="submit" class="btn btn-default btn-lg span"><span class="network-name">Submit</span></button>
-        </br>
-        </br>
+            </br>
+            <button type="submit" class="btn btn-default btn-lg span"><span class="network-name">Submit</span></button>
+            </br>
+            </br>
 
-        <a href="training.html" class="btn btn-default btn-lg span"> <span class="network-name">Back</span></a>
-        </br>
-        </br></br>
-        </br>
+            <a href="training.html" class="btn btn-default btn-lg span"> <span class="network-name">Back</span></a>
+            </br>
+            </br></br>
+            </br>
                             
         </form>
         </div>
-    </div>
 </div>
 
 

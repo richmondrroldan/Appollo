@@ -70,4 +70,7 @@ Route::get('training', 'articleController@training');
 
 Route::get('detail', 'mentorsController@detail');
 
+Route::get('/articles', 'articleController@all');
+
 Route::get('/{article}', 'articleController@article');
+

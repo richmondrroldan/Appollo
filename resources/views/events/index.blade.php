@@ -61,12 +61,16 @@
         <tr>
             <th class="center">Topics</th>
             <th class="center">Description</th>
+            <th class="center">Venue</th>
+            <th class="center">Date</th>
             <th class="center">Action</th>
         </tr>
   @foreach($events as $event)
     <tr>
         <td>{{$event->title}}</td>
         <td>{{$event->description}}</td>
+        <td>{{$event->venue}}</td>
+        <td>{{$event->date}}</td>
         <td>
             <a class="btn btn-primary" href="{{ route('events.edit',$event->id) }}">Edit</a>
             {!! Form::open(['method' => 'DELETE','route' => ['events.destroy', $event->id],'style'=>'display:inline']) !!}

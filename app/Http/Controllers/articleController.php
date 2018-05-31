@@ -36,6 +36,11 @@ class articleController extends Controller
         return view('article.article', compact('articles'));
     }
 
+    public function all(){
+        $articles = Article::all();
+        return view('article.article', compact('articles'));
+    }
+
     public function training(){
         return view('training');
     }
@@ -62,7 +67,7 @@ class articleController extends Controller
 
         $article->title = Input::get('title');
         $article->description = Input::get('description');
-        $article->article = Input::get('article');
+        $article->link = Input::get('link');
 
         if(Input::hasFile('image')){
             $file = Input::file('image');
@@ -115,7 +120,7 @@ class articleController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        
     }
 
     /**

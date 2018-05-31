@@ -30,7 +30,7 @@
             </br>
 
             <h2 class="programhead">View our past events. Articles by the people involved.</h2>
-            <a href="upEvents" class="gbuttons btn btn-default btn-lg"> <span class="network-name">News Feed</span></a>
+            <a href="/articles" class="gbuttons btn btn-default btn-lg"> <span class="network-name">News Feed</span></a>
             </br>
             </br>
             
